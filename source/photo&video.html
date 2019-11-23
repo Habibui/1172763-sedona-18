@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Галлерея</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
@@ -10,7 +12,7 @@
         <img class="page-header__logo-image" src="img/logotyle-mobile.svg" width="102" height="83" alt="Логотип">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
@@ -23,14 +25,14 @@
               <a href="form.html">Форма отзыва</a>
             </li>
             <li class="site-list__item">
-              <a href="https://echo.htmlacademy.ru">Html academy</a>
+              <a href="https://htmlacademy.ru/intensive/adaptive">Html academy</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
 
-    <main>
+    <main class="page-posts">
       <h1 class="visually-hidden">Галлерея</h1>
 
       <section class="posts-list">
@@ -101,8 +103,8 @@
         </div>
 
         <div class="posts-list__item video-item">
-          <strong class="video-item-title">Вы ещё сомневаетесь?</strong>
-          <p class="video-item-argument">
+          <strong class="video-item__title">Вы ещё сомневаетесь?</strong>
+          <p class="video-item__argument">
             Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
           </p>
           <img class="video" src="img/video-mobile.jpg" alt="Видеопрезентация Седоны">

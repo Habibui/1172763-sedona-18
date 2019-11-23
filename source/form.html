@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Форма отзыва</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
@@ -10,7 +12,7 @@
         <img class="page-header__logo-image" src="img/logotyle-mobile.svg" width="102" height="83" alt="Логотип">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
@@ -23,14 +25,14 @@
               <a>Форма отзыва</a>
             </li>
             <li class="site-list__item">
-              <a href="https://echo.htmlacademy.ru">Html academy</a>
+              <a href="https://htmlacademy.ru/intensive/adaptive">Html academy</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
 
-    <main>
+    <main class="page-form">
       <h1 class="visually-hidden">Оставьте свой отзыв!</h1>
 
       <section class="recall">
@@ -93,15 +95,17 @@
                   <label class="attractions__label" for="slide-park">Слайд-Парк</label>
                   <input class="attractions__checkbox" type="checkbox" name="red-rocks-checkbox" id="red-rocks">
                   <label class="attractions__label" for="red-rocks">Красные скалы</label>
-                </fieldset>
+              </fieldset>
 
-                <fieldset class="form-introduce__item emotions">
+              <fieldset class="form-introduce__item emotions">
                   <legend class="visually-hidden">Место для описания своих впечатлений и эмоций от Седоны</legend>
                     <label class="emotions__label" for="emotions-description">Опишите свои эмоции:</label>
                     <textarea class="emotions__textarea" type="text" name="emotions-description-input" id="emotions-description">
-                </fieldset>
+                      Опишите подробно все свои восторги
+                    </textarea>
+              </fieldset>
 
-              <button class="form-introduce__button button-blue" type="submit">Отправить отзыв</button>
+            <button class="form-introduce__button button-blue" type="submit">Отправить отзыв</button>
 
           </fieldset>
         </form>
