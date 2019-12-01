@@ -1,11 +1,14 @@
 @import "advantages.less";
 @import "attractions.less";
 @import "contacts.less";
+@import "content.less";
 @import "description-list.less";
 @import "emotions.less";
 @import "form-introduce.less";
+@import "global.less";
 @import "impressions.less";
 @import "main-nav.less";
+@import "mixin.less";
 @import "page-header.less";
 @import "posts-list.less";
 @import "recall.less";
@@ -14,77 +17,5 @@
 @import "social-networks.less";
 @import "video-item.less";
 
-body {
-  margin: 0;
-  padding: 0;
 
-  font-family: "PT Sans", Arial, sans-serif;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 400;
-  color: #000000;
-  text-transform: uppercase;
-
-  background-color: #ffffff;
-  box-shadow: 0px 1px 0px 0 rgba(1, 1, 1, 0.2)
-}
-
-a {
-  text-decoration: none;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-.margin-padding() {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.some-title() {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-}
-
-.some-paragraph() {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-}
-
-.some-label() {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 26px;
-}
-
-.footer {
-  .some-label();
-}
-
-.footer-teg {
-  .some-title();
-}
-
-.website-by {
-  .some-label();
-}
-
-.page-posts {
-  .some-paragraph();
-}
-
-.page-form {
-  .some-title();
-}
 
