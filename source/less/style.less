@@ -1,4 +1,18 @@
-@import "content.less";
+@import "advantages.less";
+@import "attractions.less";
+@import "contacts.less";
+@import "description-list.less";
+@import "emotions.less";
+@import "form-introduce.less";
+@import "impressions.less";
+@import "main-nav.less";
+@import "page-header.less";
+@import "posts-list.less";
+@import "recall.less";
+@import "searching.less";
+@import "site-list.less";
+@import "social-networks.less";
+@import "video-item.less";
 
 body {
   margin: 0;
@@ -15,6 +29,10 @@ body {
   box-shadow: 0px 1px 0px 0 rgba(1, 1, 1, 0.2)
 }
 
+a {
+  text-decoration: none;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -26,70 +44,47 @@ body {
   overflow: hidden;
 }
 
-/*как создать правило для list-style:none;?*/
-
-.page-header {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 40px;
-}
-
-.main-nav {
-  background-color: #81b3d2;
-}
-
-.site-list,
-.advantages__list,
-.description-list,
-.social-networks__list {
+.margin-padding() {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
-.site-list,
-.advantages__list,
-.description-list,
-.social-networks__list {
-  margin: 0;
-  padding: 0;
-}
-
-.advantages__item {
-  background-color: #f2f2f2;
-}
-
-.advantages__description {
-  margin: 0;
-  padding: 0;
-
-  color: #ffffff;
-  background-color: #81b3d2;
-}
-
-.description-list__item {
-  background-color: #ffffff;
-}
-
-.footer {
+.some-title() {
+  font-weight: 700;
+  font-size: 18px;
   line-height: 26px;
 }
 
-.page-posts {
+.some-paragraph() {
+  font-weight: 400;
   font-size: 14px;
   line-height: 24px;
 }
 
-.page-form {
-  font-weight: 700;
-  font-size: 18px;
+.some-label() {
+  font-weight: 400;
+  font-size: 14px;
   line-height: 26px;
 }
 
-.form-introduce,
-.form-introduce__fieldset {
-  border: none;
+.footer {
+  .some-label();
 }
 
-.form-introduce__item {
-  border: none;
-  border-top: 1px solid #f2f2f2;
+.footer-teg {
+  .some-title();
 }
+
+.website-by {
+  .some-label();
+}
+
+.page-posts {
+  .some-paragraph();
+}
+
+.page-form {
+  .some-title();
+}
+
