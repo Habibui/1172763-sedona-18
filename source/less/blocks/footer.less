@@ -2,10 +2,34 @@
   .some-label();
 }
 
-.footer-teg {
+.footer__teg {
   .some-title();
 }
 
-.website-by {
+.footer__website-by {
   .some-label();
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  .margin-padding();
+  justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    align-items: center;
+  }
+
+  .footer-flex {
+    display: flex;
+    width: calc(100%/3);
+    text-align: center;
+    justify-content: center;
+    .margin-padding();
+  }
 }

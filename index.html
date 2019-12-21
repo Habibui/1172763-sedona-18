@@ -10,7 +10,7 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo">
+      <a class="">
         <img class="page-header__logo-image" src="img/logotyle-mobile.svg" width="102" height="83" alt="Логотип">
       </a>
       <nav class="main-nav">
@@ -24,7 +24,7 @@
               <a href="photo&video.html">Фото и видео</a>
             </li>
             <li class="site-list__item">
-              <a href="form.html">Форма отзыва</a>
+              <a href="formpage-header__logo.html">Форма отзыва</a>
             </li>
             <li class="site-list__item">
               <a href="https://htmlacademy.ru/intensive/adaptive">Html academy</a>
@@ -57,22 +57,22 @@
 
             <ul class="advantages__description-list description-list">
               <li class="description-list__item appartment">
-                <h4>Жильё</h4><!--Или лучше использовать <span>-->
-                <p>
+                <h4 class="description-list__title">Жильё</h4><!--Или лучше использовать <span>-->
+                <p class="description-list__paragraph">
                   Рекомендуем пожить в настоящем мотеле, всё как в кино!
                 </p>
               </li>
 
               <li class="description-list__item food">
-                <h4>Еда</h4>
-                <p>
+                <h4 class="description-list__title">Еда</h4>
+                <p class="description-list__paragraph">
                   Всегда заказывайте фирменный бургер, вы не разочаруетесь!
                 </p>
               </li>
 
               <li class="description-list__item souvenir">
-                <h4>Сувениры</h4>
-                <p>
+                <h4 class="description-list__title">Сувениры</h4>
+                <p class="description-list__paragraph">
                   Не только китайского, но и местного производства!
                 </p>
               </li>
@@ -131,10 +131,10 @@
     </main>
 
     <footer class="footer">
-      <p class="footer-teg">
+      <p class="footer__teg footer-flex">
         #VISITSEDONA
       </p>
-      <div class="social-networks">
+      <div class="footer__social-networks social-networks footer-flex">
         <ul class="social-networks__list">
           <li class="social-networks__item">
             <a href="https://twitter.com/" class="social-networks__button" aria-label="Twitter">
@@ -145,7 +145,7 @@
             </a>
           </li>
 
-          <li class="social-networks-item">
+          <li class="social-networks__item">
             <a href="https://facebook.com/" class="social-networks__button" aria-label="Facebook">
               <svg class="social-networks__icon icon-fb" xmlns="http://www.w3.org/2000/svg" width="8.672" height="18.944" viewBox="0 0 8.672 18.944">
                 <path d="M6.275 3.356h2.398V0H5.795C2.656.181 1.54 2.387 1.948 6.114H0v3.518h1.959v9.312h3.837V9.632h2.857V6.114H5.787c-.022-1.045-.037-2.405.488-2.758z"/>
@@ -154,7 +154,7 @@
             </a>
           </li>
 
-          <li class="social-networks-item">
+          <li class="social-networks__item">
             <a href="https://youtube.com/" class="social-networks__button" aria-label="YouTube">
               <svg class="social-networks__icon icon-yt" xmlns="http://www.w3.org/2000/svg" width="19.979" height="14.015" viewBox="0 0 19.979 14.015">
                 <path d="M17.145 0H2.835A2.842 2.842 0 0 0 0 2.835v8.345a2.842 2.842 0 0 0 2.835 2.835h14.31a2.842 2.842 0 0 0 2.835-2.835V2.835A2.844 2.844 0 0 0 17.145 0zM7.036 10.392V3.623l6.769 3.384-6.769 3.385z"/>
@@ -164,8 +164,8 @@
           </li>
         </ul>
       </div>
-      <p class="created-by">
-        <span class="website-by">Разработано</span>
+      <p class="footer__created-by footer-flex">
+        <span class="footer__website-by">Разработано</span>
         <a href="https://htmlacademy.ru/intensive/htmlcss">
           <svg class="creator-logo" xmlns="http://www.w3.org/2000/svg" width="26.943" height="34.09" viewBox="0 0 26.943 34.09">
             <path d="M13.62.017L13.472 0 0 1.412v24.661l13.473 8.017 13.43-7.99.042-.025V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.548-1.212L25.02 3.147v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.014 1.415 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.031-1.787-.014 1.413 1.853 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.016 1.044-7.942-4.728-.015 1.416 7.979 4.795.018 1.076-7.973-4.74-.013 1.414 8.021 4.822.046.025 8.143-4.872-.011-5.177 3.415-2.036v10.021L13.472 31.85 1.925 24.979v-9.852z"/>

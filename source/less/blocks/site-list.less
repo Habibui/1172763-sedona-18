@@ -7,13 +7,31 @@
   background-color: #81b3d2;
 }
 
-.site-list__item:focus a,
-.site-list__item:hover a {
+.site-list__item:focus a[href],
+.site-list__item:hover a[href] {
   color: #ffffff;
   background-color: #669ec0;
 }
 
-.site-list__item:active a {
+.site-list__item:active a[href] {
   color: rgba(255, 255, 255, 0.3);
   background-color: #5496bd;
+}
+
+.site-list {
+  min-height: 220px;
+}
+
+@media (min-width: 768px) {
+  .site-list {
+    min-width: 768px;
+    min-height: 56px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .site-list {
+    min-width: 1200px;
+    min-height: 56px;
+  }
 }
