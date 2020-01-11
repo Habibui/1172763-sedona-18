@@ -2,13 +2,16 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <title>Курортный городок - Sedona</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/mini.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo">
+      <a class="">
         <img class="page-header__logo-image" src="img/logotyle-mobile.svg" width="102" height="83" alt="Логотип">
       </a>
       <nav class="main-nav">
@@ -22,7 +25,7 @@
               <a href="photo&video.html">Фото и видео</a>
             </li>
             <li class="site-list__item">
-              <a href="form.html">Форма отзыва</a>
+              <a href="formpage-header__logo.html">Форма отзыва</a>
             </li>
             <li class="site-list__item">
               <a href="https://htmlacademy.ru/intensive/adaptive">Html academy</a>
@@ -36,7 +39,7 @@
       <h1 class="visually-hidden">Седона - уютный курортный городок</h1>
 
       <section class="advantages">
-        <header class="advantages__header"><!--обязательно ли здесь добавлять скрытый <h2> или можно сделать как я?-->
+        <header class="advantages__header">
           <h2 class="advantages__slogan">Седона &mdash; небольшой городок в Аризоне, заслуживающий большего!</h2>
           <p class="advantages__slogan-paragraph">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         </header>
@@ -55,22 +58,22 @@
 
             <ul class="advantages__description-list description-list">
               <li class="description-list__item appartment">
-                <h4 class="description-list__title">Жильё</h4><!--Или лучше использовать <span>-->
-                <p class="description-list__slogan">
+                <h4 class="description-list__title">Жильё</h4>
+                <p class="description-list__paragraph">
                   Рекомендуем пожить в настоящем мотеле, всё как в кино!
                 </p>
               </li>
 
               <li class="description-list__item food">
                 <h4 class="description-list__title">Еда</h4>
-                <p class="description-list__slogan">
+                <p class="description-list__paragraph">
                   Всегда заказывайте фирменный бургер, вы не разочаруетесь!
                 </p>
               </li>
 
               <li class="description-list__item souvenir">
                 <h4 class="description-list__title">Сувениры</h4>
-                <p class="description-list__slogan">
+                <p class="description-list__paragraph">
                   Не только китайского, но и местного производства!
                 </p>
               </li>
@@ -117,8 +120,8 @@
 
       <section class="searching">
         <h2 class="visually-hidden">Поиск гостиниц</h2>
-        <strong class="searching__strong">Заинтересовались?</strong>
-        <p class="searching__paragraph">
+        <strong class="interest">Заинтересовались?</strong>
+        <p class="instruction">
           Укажите предполагаемы даты поездки, и мы покажем вам лучшие предложения гостниц в Седоне
         </p>
 
@@ -129,10 +132,10 @@
     </main>
 
     <footer class="footer">
-      <p class="footer-teg">
+      <p class="footer__teg footer-flex">
         #VISITSEDONA
       </p>
-      <div class="social-networks">
+      <div class="footer__social-networks social-networks footer-flex">
         <ul class="social-networks__list">
           <li class="social-networks__item">
             <a href="https://twitter.com/" class="social-networks__button" aria-label="Twitter">
@@ -162,8 +165,8 @@
           </li>
         </ul>
       </div>
-      <p class="created-by">
-        <span class="website-by">Разработано</span>
+      <p class="footer__created-by footer-flex">
+        <span class="footer__website-by">Разработано</span>
         <a href="https://htmlacademy.ru/intensive/htmlcss">
           <svg class="creator-logo" xmlns="http://www.w3.org/2000/svg" width="26.943" height="34.09" viewBox="0 0 26.943 34.09">
             <path d="M13.62.017L13.472 0 0 1.412v24.661l13.473 8.017 13.43-7.99.042-.025V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.548-1.212L25.02 3.147v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.014 1.415 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.031-1.787-.014 1.413 1.853 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.016 1.044-7.942-4.728-.015 1.416 7.979 4.795.018 1.076-7.973-4.74-.013 1.414 8.021 4.822.046.025 8.143-4.872-.011-5.177 3.415-2.036v10.021L13.472 31.85 1.925 24.979v-9.852z"/>
