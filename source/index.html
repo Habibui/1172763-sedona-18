@@ -9,11 +9,8 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="css/mini.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="container">
     <header class="page-header">
-      <a class="">
-        <img class="page-header__logo-image" src="img/logotyle-mobile.svg" width="102" height="83" alt="Логотип">
-      </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
@@ -33,6 +30,9 @@
           </ul>
         </div>
       </nav>
+      <a class="">
+        <img class="page-header__logo-image" src="img/logotyle-mobile.svg" width="102" height="83" alt="Логотип">
+      </a>
     </header>
 
     <main class="page-main">
@@ -47,13 +47,14 @@
         <ul class="advantages__list">
           <li class="advantages__item">
             <div class="advantages__description">
-              <h3 class="advantages__title">Настоящий городок</h3>
-              <p class="advantages__reason-number">&mdash; №1 &mdash;</p>
-              <p class="advantages__reason-description">Седона не атракцион для туристов, там течет своя жизнь</p>
+
+                <h3 class="advantages__title">Настоящий городок</h3>
+                <p class="advantages__reason-number">&mdash; №1 &mdash;</p>
+                <p class="advantages__reason-description">Седона не атракцион для туристов, там течет своя жизнь</p>
             </div>
 
             <div class="advantages__photo">
-              <img class="photo-city" src="img/photo-city.png" width="320" height="260" alt="Фото Седоны">
+              <img class="photo-city" src="img/photo-city.png" width="100%" min-height="260" alt="Фото Седоны">
             </div>
 
             <ul class="advantages__description-list description-list">
@@ -88,7 +89,7 @@
             </div>
 
             <div class="advantages__photo">
-              <img class="photo-city" src="img/photo-bridge.png" width="320" height="260" alt="Фото Моста Дьявола">
+              <img class="photo-city" src="img/photo-bridge.png" width="100%" alt="Фото Моста Дьявола">
             </div>
           </li>
 
@@ -127,7 +128,7 @@
 
         <a class="searching__button button-blue" href="#">Найти гостиницу</a>
 
-        <img class="map" src="img/map-mobile.jpg" width="320" height="350" alt="Местоположение на карте">
+        <img class="map" src="img/map-mobile.jpg" width="100%" alt="Местоположение на карте">
       </section>
     </main>
 
