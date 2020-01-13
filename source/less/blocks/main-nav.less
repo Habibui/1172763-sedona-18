@@ -1,5 +1,5 @@
 .main-nav {
-  background-color: #81b3d2;
+  background-color: #ffffff;
 }
 
 .main-nav__toggle {
@@ -27,15 +27,17 @@
 
 @media (min-width: 768px) {
   .main-nav {
-    width: auto;
-    margin: 0;
+    .margin-padding();
   }
 
   .main-nav__wrapper {
     display: flex;
     justify-content: space-between;
-    width: 680px;
-    margin: 0 auto;
+    min-width: 680px;
+  }
+
+  .main-nav__toggle {
+    display: none;
   }
 }
 
