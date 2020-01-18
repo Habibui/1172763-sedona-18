@@ -5,6 +5,7 @@
 .description-list__item {
   background-color: #ffffff;
   background-repeat: no-repeat;
+  position: relative;
 }
 
 .description-list__title {
@@ -21,16 +22,19 @@
   padding: 0;
 }
 
-.description-list__item:nth-child(3n+1) {
+.description-list__item:nth-child(3n+1):before {/*Почему не работает?*/
   background-image: url(../img/icon-house.svg);
+  background-size: 37px 36px;
 }
 
-.description-list__item:nth-child(3n+2) {
+.description-list__item:nth-child(3n+2):before {/*Почему не работает?*/
   background-image: url("../img/icon-gift.svg");
+  background-size: 32px 38px;
 }
 
-.description-list__item:nth-child(3n+3) {
+.description-list__item:nth-child(3n+3):before {/*Почему не работает?*/
   background-image: url("../img/icon-burger.svg");
+  background-size: 40px 35px;
 }
 
 .description-list__title {
@@ -48,4 +52,15 @@
   padding: 0;
   margin-top: 23px;
   letter-spacing: 0.115px;
+}
+
+@media (min-width: 768px) {
+  .description-list {
+    list-style: none;
+    background-color: #ffffff;
+
+    flex-direction: row;
+    width: 100%;
+    padding: 0;
+  }
 }

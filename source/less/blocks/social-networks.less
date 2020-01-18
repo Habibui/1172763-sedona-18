@@ -4,5 +4,44 @@
   display: flex;
   margin: 0 auto;
   align-items: center;
-  justify-content: space-around;
+}
+
+.social-networks__item {
+  background-color: #81b3d2;
+  width: 46px;
+  height: 48px;
+}
+
+.social-networks__item:first-child {
+  margin-left: 25%;/*уточнить*/
+}
+
+.social-networks__item:not(:first-child) {
+  margin-left: 6px;
+}
+
+.icon-tw {
+  padding: 17px 14px;
+}
+
+.icon-fb {
+  padding: 14px 19px 16px;
+}
+
+.icon-yt {
+  padding: 17px 13px;
+}
+
+@media (min-width: 768px) {
+  .social-networks {
+    margin-left: 33%;
+  }
+
+  .social-networks__list {
+    margin: 0 auto;
+  }
+
+  .social-networks__item:first-child {
+    margin-left: 10%;
+  }
 }

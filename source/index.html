@@ -9,7 +9,7 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="css/mini.css" rel="stylesheet">
   </head>
-  <body class="container">
+  <body>
     <header class="page-header">
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
@@ -33,7 +33,7 @@
           </ul>
         </div>
       </nav>
-      <a class="">
+      <a class="page-header__logo">
         <img class="page-header__logo-image" src="img/logotyle-mobile.svg" width="102" height="83" alt="Логотип">
       </a>
     </header>
@@ -43,21 +43,24 @@
 
       <section class="advantages">
         <header class="advantages__header">
-          <h2 class="advantages__slogan">Седона &mdash; небольшой городок в Аризоне, заслуживающий большего!</h2>
-          <p class="advantages__slogan-paragraph">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+          <div class="advantages__container"><!--Обратить внимание на наименование классов по БЭМ-->
+            <h2 class="advantages__slogan">Седона &mdash; небольшой городок в Аризоне, заслуживающий большего!</h2>
+            <p class="advantages__slogan-paragraph">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+          </div>
         </header>
 
         <ul class="advantages__list">
           <li class="advantages__item">
-            <div class="advantages__description">
-
+            <div class="advantages__item-tablet">
+            <div class="advantages__description"><!--Возможно стоит прописать advantages__description и advantages__photo в дополнительном <div>-->
                 <h3 class="advantages__title">Настоящий городок</h3>
                 <p class="advantages__reason-number">&mdash; №1 &mdash;</p>
                 <p class="advantages__reason-description">Седона не атракцион для туристов, там течет своя жизнь</p>
             </div>
 
             <div class="advantages__photo">
-              <img class="photo-city" src="img/photo-city.png" width="100%" min-height="260" alt="Фото Седоны">
+              <img class="photo-city" src="img/photo-city.png" width="100%" min-height="256" alt="Фото Седоны">
+            </div>
             </div>
 
             <ul class="advantages__description-list description-list">
@@ -85,14 +88,16 @@
           </li>
 
           <li class="advantages__item">
-            <div class="advantages__description">
-              <h3 class="advantages__title">Там есть мост дьявола</h3>
-              <p class="advantages__reason-number">&mdash; №2 &mdash;</p>
-              <p class="advantages__reason-description">Да, По нему можно пройти! Если вы осмелитесь, конечно</p>
-            </div>
+            <div class="advantages__item-tablet">
+              <div class="advantages__description">
+               <h3 class="advantages__title">Там есть мост дьявола</h3>
+               <p class="advantages__reason-number">&mdash; №2 &mdash;</p>
+               <p class="advantages__reason-description">Да, По нему можно пройти! Если вы осмелитесь, конечно</p>
+              </div>
 
-            <div class="advantages__photo">
-              <img class="photo-city" src="img/photo-bridge.png" width="100%" alt="Фото Моста Дьявола">
+              <div class="advantages__photo">
+                <img class="photo-city" src="img/photo-bridge.png" width="100%" alt="Фото Моста Дьявола">
+              </div>
             </div>
           </li>
 
@@ -124,12 +129,12 @@
 
       <section class="searching">
         <h2 class="visually-hidden">Поиск гостиниц</h2>
-        <strong class="interest">Заинтересовались?</strong>
-        <p class="instruction">
+        <strong class="searching__teg">Заинтересовались?</strong>
+        <p class="searching__paragraph">
           Укажите предполагаемы даты поездки, и мы покажем вам лучшие предложения гостниц в Седоне
         </p>
 
-        <a class="searching__button button-blue" href="#">Найти гостиницу</a>
+        <a class="searching__button" href="#">Найти гостиницу</a>
 
         <img class="map" src="img/map-mobile.jpg" width="100%" alt="Местоположение на карте">
       </section>
@@ -144,7 +149,7 @@
           <li class="social-networks__item">
             <a href="https://twitter.com/" class="social-networks__button" aria-label="Twitter">
               <svg class="social-networks__icon icon-tw" xmlns="http://www.w3.org/2000/svg" width="17.5" height="14.663"  viewBox="0 0 17.5 14.663">
-                <path fill-rule="evenodd" d="M11.283.153c1.736-.484 3.074.264 3.685 1.15.694-.225 1.372-.47 2.072-.69-.004.841-.538 1.478-.883 1.728.704.165 1.343-.481 1.343-.481-.175.977-1.035 1.746-1.611 1.977-.239 6.592-3.272 10.956-10.382 10.823h-.46c-.422 0-4.29-.45-5.047-1.843 2.341.192 4.011-.412 4.835-1.15-.989-.293-2.761-.464-3.07-2.881.362.105.583.223 1.228.117C1.757 8.067.385 7.366.461 5.218c.294.319 1.1.523 1.381.461C1.117 5.444-.188 2.398.921.843 2.794 2.655 4.769 4.364 8.29 4.528c.216-2.24 1.171-3.74 2.993-4.375z" clip-rule="evenodd"/>
+                <path fill= #ffffff fill-rule="evenodd" d="M11.283.153c1.736-.484 3.074.264 3.685 1.15.694-.225 1.372-.47 2.072-.69-.004.841-.538 1.478-.883 1.728.704.165 1.343-.481 1.343-.481-.175.977-1.035 1.746-1.611 1.977-.239 6.592-3.272 10.956-10.382 10.823h-.46c-.422 0-4.29-.45-5.047-1.843 2.341.192 4.011-.412 4.835-1.15-.989-.293-2.761-.464-3.07-2.881.362.105.583.223 1.228.117C1.757 8.067.385 7.366.461 5.218c.294.319 1.1.523 1.381.461C1.117 5.444-.188 2.398.921.843 2.794 2.655 4.769 4.364 8.29 4.528c.216-2.24 1.171-3.74 2.993-4.375z" clip-rule="evenodd"/>
               </svg>
               <span class="visually-hidden">Twitter</span>
             </a>
@@ -153,7 +158,7 @@
           <li class="social-networks__item">
             <a href="https://facebook.com/" class="social-networks__button" aria-label="Facebook">
               <svg class="social-networks__icon icon-fb" xmlns="http://www.w3.org/2000/svg" width="8.672" height="18.944" viewBox="0 0 8.672 18.944">
-                <path d="M6.275 3.356h2.398V0H5.795C2.656.181 1.54 2.387 1.948 6.114H0v3.518h1.959v9.312h3.837V9.632h2.857V6.114H5.787c-.022-1.045-.037-2.405.488-2.758z"/>
+                <path fill= #ffffff d="M6.275 3.356h2.398V0H5.795C2.656.181 1.54 2.387 1.948 6.114H0v3.518h1.959v9.312h3.837V9.632h2.857V6.114H5.787c-.022-1.045-.037-2.405.488-2.758z"/>
               </svg>
               <span class="visually-hidden">Facebook</span>
             </a>
@@ -162,7 +167,7 @@
           <li class="social-networks__item">
             <a href="https://youtube.com/" class="social-networks__button" aria-label="YouTube">
               <svg class="social-networks__icon icon-yt" xmlns="http://www.w3.org/2000/svg" width="19.979" height="14.015" viewBox="0 0 19.979 14.015">
-                <path d="M17.145 0H2.835A2.842 2.842 0 0 0 0 2.835v8.345a2.842 2.842 0 0 0 2.835 2.835h14.31a2.842 2.842 0 0 0 2.835-2.835V2.835A2.844 2.844 0 0 0 17.145 0zM7.036 10.392V3.623l6.769 3.384-6.769 3.385z"/>
+                <path fill= #ffffff d="M17.145 0H2.835A2.842 2.842 0 0 0 0 2.835v8.345a2.842 2.842 0 0 0 2.835 2.835h14.31a2.842 2.842 0 0 0 2.835-2.835V2.835A2.844 2.844 0 0 0 17.145 0zM7.036 10.392V3.623l6.769 3.384-6.769 3.385z"/>
               </svg>
               <span class="visually-hidden">YouTube</span>
             </a>
