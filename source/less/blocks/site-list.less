@@ -3,28 +3,28 @@
 }
 
 .site-list__item a {
+  .margin-padding;
+  display: block;
   color: #ffffff;
   background-color: #81b3d2;
-  display: block;/*может лучше размеры задать?*/
+  box-shadow: 0 1px 0 0 rgba(1, 1, 1, 0.2);
+  height: 55px;
+  text-align: center;
+  padding-top: 7px;
+}
+
+.site-list__item a[href] {
+  box-shadow: 0 1px 0 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 0 rgba(1, 1, 1, 0.2);
 }
 
 .site-list__item:focus a[href],
-.site-list__item:hover a[href] {
-  color: #ffffff;
+.site-list__item:hover a[href]{
   background-color: #669ec0;
-}
+  }
 
 .site-list__item:active a[href] {
-  color: rgba(255, 255, 255, 0.3);
   background-color: #5496bd;
-}
-
-.site-list__item {
-  /*display: block;*/
-  margin: 0;
-
-  border-bottom: 1px solid;
-}
+  }
 
 @media (min-width: 768px) {
   .site-list {
@@ -36,30 +36,34 @@
     margin: 0;
   }
 
-  .site-list a {
+  .site-list__item a {
+    .margin-padding();
     color: #766357;
     background-color: #ffffff;
+    height: auto;
+    box-shadow: none;
   }
 
-  .site-list a[href] {
+  .site-list__item a[href] {
     color: #000000;
     background-color: #ffffff;
+    box-shadow: none;
   }
 
-  .site-list a[href]:focus,
-  .site-list a[href]:hover {
+  .site-list__item a[href]:focus,
+  .site-list__item a[href]:hover {
     color: #81b3d2;
     background-color: #ffffff;
   }
 
-  .site-list a[href]:active {
+  .site-list__item a[href]:active {
     color: rgba(0, 0, 0, 0.3);
     background-color: #ffffff;
   }
 
-  /*.site-list__item:nth-child(4n+1) {
-    /*padding-left: 49px;*//*Возможно лучше сделать через margin
-  }*/
+  .site-list__item:nth-child(4n+1) {
+    padding-left: 49px;/*Возможно лучше сделать через margin*/
+  }
 
   .site-list__item:nth-child(4n+2) {
     padding-left: 77px;/*Возможно лучше сделать через margin*/
@@ -75,7 +79,6 @@
 
   .site-list__item {
     padding-top: 19px;/*Возможно лучше сделать через margin*/
-    padding-bottom: 22px;/*Возможно лучше сделать через margin*/
     background-color: #ffffff;
     border: none;
   }

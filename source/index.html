@@ -10,13 +10,14 @@
     <link href="css/mini.css" rel="stylesheet">
   </head>
   <body>
+    <div class="page-wrapper">
     <header class="page-header">
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
+      <nav class="main-nav main-nav--opened">
+        <button class="main-nav__menu-closed" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
 
-        <div class="main-nav__wrapper">
+        <!--<div class="main-nav__wrapper">-->
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
               <a>Главная</a>
@@ -31,19 +32,27 @@
               <a href="https://htmlacademy.ru/intensive/adaptive">Html academy</a>
             </li>
           </ul>
-        </div>
+        <!--</div>-->
       </nav>
-      <a class="page-header__logo">
+
+      <div class="page-header__top">
+      <a class="page-header__logo" aria-label="Лого Седоны">
         <img class="page-header__logo-image" src="img/logotyle-mobile.svg" width="102" height="83" alt="Логотип">
       </a>
+      <button class="page-header__menu-open" type="button" aria-label="Открыть меню"></button>
+      </div>
+      <div class="page-header__intro">
+        <img class="page-header__title" src="img/text-sedona-index.svg" width="461" height="80" alt="City of Sedona">
+      </div>
+
     </header>
 
-    <main class="page-main">
+    <main>
       <h1 class="visually-hidden">Седона - уютный курортный городок</h1>
 
       <section class="advantages">
-        <header class="advantages__header">
-          <div class="advantages__container"><!--Обратить внимание на наименование классов по БЭМ-->
+        <header class="advantages__header"><!--Оставить лучше <header> или заменить на другой тег?-->
+          <div class="advantages__content"><!--Обратить внимание на наименование классов по БЭМ-->
             <h2 class="advantages__slogan">Седона &mdash; небольшой городок в Аризоне, заслуживающий большего!</h2>
             <p class="advantages__slogan-paragraph">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
           </div>
@@ -51,44 +60,46 @@
 
         <ul class="advantages__list">
           <li class="advantages__item">
-            <div class="advantages__item-tablet">
             <div class="advantages__description"><!--Возможно стоит прописать advantages__description и advantages__photo в дополнительном <div>-->
-                <h3 class="advantages__title">Настоящий городок</h3>
-                <p class="advantages__reason-number">&mdash; №1 &mdash;</p>
-                <p class="advantages__reason-description">Седона не атракцион для туристов, там течет своя жизнь</p>
+              <h3 class="advantages__title">Настоящий городок</h3>
+              <p class="advantages__reason-number">&mdash; №1 &mdash;</p>
+              <p class="advantages__reason-description">Седона не атракцион для туристов, там течет своя жизнь</p>
             </div>
 
             <div class="advantages__photo">
-              <img class="photo-city" src="img/photo-city.png" width="100%" min-height="256" alt="Фото Седоны">
-            </div>
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg">
+                <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg">
+                <source media="(min-width: 320px)" srcset="img/main-city-mobile@1x.jpg">
+                <img class="advantages__image" src="img/main-city-mobile@1x.jpg" width="320" height="260" alt="Бар в Седоне">
+              </picture>
             </div>
 
             <ul class="advantages__description-list description-list">
-              <li class="description-list__item appartment">
+              <li class="description-list__item--appartment">
                 <h4 class="description-list__title">Жильё</h4>
                 <p class="description-list__paragraph">
                   Рекомендуем пожить в настоящем мотеле, всё как в кино!
                 </p>
               </li>
 
-              <li class="description-list__item food">
-                <h4 class="description-list__title">Еда</h4>
-                <p class="description-list__paragraph">
-                  Всегда заказывайте фирменный бургер, вы не разочаруетесь!
-                </p>
-              </li>
-
-              <li class="description-list__item souvenir">
+              <li class="description-list__item--souvenir">
                 <h4 class="description-list__title">Сувениры</h4>
                 <p class="description-list__paragraph">
                   Не только китайского, но и местного производства!
+                </p>
+              </li>
+
+              <li class="description-list__item--food">
+                <h4 class="description-list__title">Еда</h4>
+                <p class="description-list__paragraph">
+                  Всегда заказывайте фирменный бургер, вы не разочаруетесь!
                 </p>
               </li>
             </ul>
           </li>
 
           <li class="advantages__item">
-            <div class="advantages__item-tablet">
               <div class="advantages__description">
                <h3 class="advantages__title">Там есть мост дьявола</h3>
                <p class="advantages__reason-number">&mdash; №2 &mdash;</p>
@@ -96,9 +107,13 @@
               </div>
 
               <div class="advantages__photo">
-                <img class="photo-city" src="img/photo-bridge.png" width="100%" alt="Фото Моста Дьявола">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg">
+                  <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg">
+                  <source media="(min-width: 320px)" srcset="img/main-bridge-mobile@1x.jpg">
+                  <img class="advantages__image" src="img/main-city-mobile@1x.jpg" width="320" height="260" alt="Фото Моста Дьявола">
+                </picture>
               </div>
-            </div>
           </li>
 
           <li class="advantages__item">
@@ -118,6 +133,7 @@
           </li>
 
           <li class="advantages__item">
+
             <h3 class="advantages__title">Мало туристов</h3>
             <p class="advantages__reason-number">&mdash; №5 &mdash;</p>
             <p class="advantages__reason-description">
@@ -136,7 +152,11 @@
 
         <a class="searching__button" href="#">Найти гостиницу</a>
 
-        <img class="map" src="img/map-mobile.jpg" width="100%" alt="Местоположение на карте">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg">
+          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg">
+          <source media="(min-width: 320px)" srcset="img/bg-map-mobile@1x.jpg">
+          <img class="searching__map" src="img/map-mobile.jpg" width="100%" alt="Местоположение на карте">
       </section>
     </main>
 
@@ -183,5 +203,6 @@
         </a>
       </p>
     </footer>
+    </div>
   </body>
 </html>
