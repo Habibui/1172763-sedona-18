@@ -12,5 +12,135 @@
 
   min-height: 508px;
   margin: 0;
-  padding: 22px, 20px, 23px;
+  padding: 22px 20px 23px;
+}
+
+@media (min-width: 768px) {
+  .video-item {
+    margin: 0 auto;
+  }
+
+  .video-item__description {
+    width: 415px;
+  }
+
+  .video-item__title {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 0.87;
+    margin-top: 67px;
+  }
+
+  .video-item__argument {
+    margin-top: 30px;
+  }
+
+  .video-item__video-player {
+    margin-bottom: 25px;
+    margin-top: 37px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .video {
+    height: 500px;
+  }
+
+  .video-item__player {
+    margin-bottom: 25px;
+    margin-top: 37px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .video-item__controls {
+    width: 100%;
+    height: 93px;
+
+    background-color: #000000;
+    margin-top: -93px;
+    opacity: 0.6;
+  }
+
+  .video-item__bar {
+    width: 100%;
+    height: auto;
+  }
+
+  .video-item__control-buttons {
+    width: 100%;
+    height: auto;
+  }
+
+  .video-item__button--repeat {
+    top: 35px;
+    left: 32px;
+  }
+
+  .video-item__button--subtitle {
+    top: 36px;
+    left: 495px;
+  }
+
+  .video-item__button--full-screen {
+    top: 36px;
+    left: 520px;
+  }
+
+  .video-item__bar::before {
+    width: 389px;
+    height: 3px;
+    top: 45px;
+    left: 93px;
+  }
+
+  .video-item__bar::after {
+    top: 41px;
+    left: 205px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .video-item__title {
+    margin-top: 72px;
+  }
+
+  .video-item__player {
+    width: ((100% * 2) / 3);
+    margin-top: 35px;
+    margin-bottom: 0;
+  }
+
+  .video-item__controls {
+    height: 93px;
+    margin-bottom: 0;
+    margin-top: -93px;
+  }
+
+  .video-item__button--repeat {
+    top: 35px;
+    left: 30px;
+  }
+
+  .video-item__button--subtitle {
+    top: 35px;
+    left: 645px;
+  }
+
+  .video-item__button--full-screen {
+    top: 35px;
+    left: 670px;
+  }
+
+  .video-item__bar::before {
+    width: 540px;
+    height: 3px;
+    top: 45px;
+    left: 93px;
+  }
+
+  .video-item__bar::after {
+    top: 41px;
+    left: 205px;
+  }
 }

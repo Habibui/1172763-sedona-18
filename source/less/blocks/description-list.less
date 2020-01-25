@@ -21,6 +21,8 @@
   margin-left: 69px;
 
   text-align: left;
+
+  position: relative;
 }
 
 .description-list__item:nth-child(3n+2) {
@@ -35,7 +37,7 @@
   font-weight: 700;
 }
 
-.description-list__item--appartment::before {
+.item-appartment::before {
 
   display: block;
 
@@ -45,12 +47,13 @@
   background: url("../img/icon-house.svg") no-repeat center;
   background-size: contain;
   content: "";
-  float: left;
   margin-left: -47px;
   margin-top: -9px;
+
+  position: absolute;
 }
 
-.description-list__item--souvenir::before {
+.item-souvenir::before {
   display: block;
 
   width: 32px;
@@ -59,12 +62,13 @@
   background: url("../img/icon-gift.svg") no-repeat center;
   background-size: contain;
   content: "";
-  float: left;
   margin-left: -44px;
   margin-top: -11px;
+
+  position: absolute;
 }
 
-.description-list__item--food::before {
+.item-food::before {
   display: block;
 
   width: 37px;
@@ -73,9 +77,10 @@
   background: url("../img/icon-burger.svg") no-repeat center;
   background-size: contain;
   content: "";
-  float: left;
   margin-left: -49px;
   margin-top: -7px;
+
+  position: absolute;
 }
 
 .description-list__paragraph {
@@ -106,6 +111,10 @@
   .description-list__item {
     width: 256px;
     height: 330px;
+
+    margin-top: 0;
+    margin-left: 0;
+    text-align: center;
   }
 
   .description-list__title {
@@ -120,7 +129,25 @@
     text-align: center;
   }
 
-  .description-list__item--souvenir {
+  .paragraph-appartment {
+    margin: 0 auto;
+    margin-top: 29px;
+    width: 158px;
+  }
+
+  .paragraph-souvenir {
+    margin: 0 auto;
+    margin-top: 29px;
+    width: 166px;
+  }
+
+  .paragraph-food {
+    margin: 0 auto;
+    margin-top: 29px;
+    width: 153px;
+  }
+
+  .item-souvenir {
     order: 1;
   }
 
@@ -130,27 +157,27 @@
     margin-bottom: 22px;
   }
 
-  .description-list__item--appartment::before {
+  .item-appartment::before {
     width: 75px;
     height: 72px;
 
-    margin-left: 93px;
-    margin-top: 61px;
+    margin-left: 90px;
+    margin-top: 60px;
   }
 
-  .description-list__item--food::before {
+  .item-food::before {
     width: 77px;
     height: 68px;
 
-    margin-left: 96px;
-    margin-top: 62px;
+    margin-left: 92px;
+    margin-top: 63px;
   }
 
-  .description-list__item--souvenir::before {
+  .item-souvenir::before {
     width: 64px;
     height: 75px;
 
-    margin-left: 84px;
-    margin-top: 50px;
+    margin-left: 98px;
+    margin-top: 57px;
   }
 }
