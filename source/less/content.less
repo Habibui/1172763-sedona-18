@@ -12,7 +12,7 @@
 .page-posts {
   .some-paragraph();
   display: flex;
-  font-display: column;
+  flex-direction: column;
   .margin-padding();
 }
 
@@ -30,5 +30,11 @@
   .page-wrapper {
     width: 768px;
     overflow: hidden;
+  }
+}
+
+@media (min-width: 1280px) {
+  .page-wrapper {
+    width: 1280px;
   }
 }
