@@ -56,6 +56,8 @@
 
 .likes {
   position: relative;
+
+  display: flex;
 }
 
 .photo-title {
@@ -71,25 +73,23 @@
 }
 
 .posts-list__button {
-  width: 0px;
-  height: 0px;
+  width: 23px;
+  height: 21px;
 
   border: none;
   cursor: pointer;
-  margin: 0;
-  padding: 0;
+  .margin-padding();
+  background: none;
 }
 
 .posts-list__button::before {
-  display: inline-block;
-
   width: 23px;
   height: 21px;
 
   background: url("../img/icon-like.svg") no-repeat;
   content: "";
   position: absolute;
-  top: 10px;
+  top: 0;
   left: 0;
 }
 
@@ -98,6 +98,7 @@
   .margin-padding();
   width: 35px;
   top: 10px;
+  padding-left: 20px;
 }
 
 @media (min-width: 768px) {
@@ -162,9 +163,10 @@
     width: 83px;
 
     margin-left: auto;
-    margin-top: 0;
-
-    position: relative;
+    margin-right: 20px;
+    margin-top: -80px;
+    /*right: 40px;
+    position: relative;*/
   }
 
   .posts-list__button::before {
@@ -201,7 +203,6 @@
   }
 
   .posts-list__item-footer {
-/*задать background-color*/
     margin-top: -80px;
     color: white;
     width: 100%;

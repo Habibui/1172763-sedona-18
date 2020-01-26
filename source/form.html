@@ -61,79 +61,107 @@
           </p>
         </header>
 
-        <form class="recall__form-introduce form-introduce" action="https://echo.htmlacademy.ru">
-          <fieldset class="form-introduce__fieldset">
-            <legend class="visually-hidden">Recall</legend>
-            <fieldset class="form-introduce__item name">
-              <legend class="form-introduce__title">Представьтесь:</legend>
-              <!--Лучше использовать вложенный <input> или связывать через id?-->
-              <label class="name__label" id="first-name">Имя*:</label>
-              <input class="name__input" id="first-name" type="text" name="first-name-input" value="Петр"
-                placeholder="Иван">
-              <label class="name__label" id="last-name">Фамилия*:</label>
-              <input class="name__input" id="last-name" type="text" name="last-name-input" value="Иванов"
-                placeholder="Иванов">
-              <label class="name__label" id="patronymic">Отчество:</label>
-              <input class="name__input" id="patronymic" type="text" name="patronymic-input" value="Александрович"
-                placeholder="Иванович">
-            </fieldset>
+        <form class="review-form" name="review-form" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="person">
+            <div class="person__bordering">
+              <h2 class="person__title">Представьтесь:</h2>
 
-            <fieldset class="form-introduce__item contacts">
-              <legend class="contacts__legend">Контактная информация:</legend>
-              <label class="contacts__label" id="number">Контактный телефон*:</label>
-              <input class="contacts__input" id="number" type="text" name="number-input" value="Введите телефон"
-                placeholder="123456789">
-              <button class="contacts__button button-number">
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
-                  <path fill="#010101"
-                    d="M3.6 7.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.699-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V17c0 .6-.4 1-1 1C7.6 18 0 10.4 0 1c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1L3.6 7.8z" />
-                </svg>
-              </button>
-              <label class="contacts__label" id="e-mail">Электронная почта*:</label>
-              <input class="contacts__input" id="e-mail" type="text" name="e-mail-input" value="Введите e-mail"
-                placeholder="pilot@e-mail.com">
-              <button class="contacts__button button-calendar">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-                  <path
-                    d="M8 10c-.266 0-.5-.094-1-.336L0 6v7c0 .55.45 1 1 1h14c.55 0 1-.45 1-1V6L9 9.664c-.5.242-.734.336-1 .336zm7-8H1c-.55 0-1 .45-1 1v.758l8 4.205 8-4.205V3c0-.55-.45-1-1-1z" />
-                </svg>
-              </button>
-            </fieldset>
+              <div class="person__wrap">
+                <div class="person__name">
+                  <label class="person__label" for="name">Имя*:</label>
+                  <input class="person__field" type="text" placeholder="Петр" name="name" id="name">
+                </div>
 
-            <fieldset class="form-introduce__item impressions">
-              <legend class="form-introduce__legend">Ваше общее впечатление:</legend>
-              <input class="impressions__radio" type="radio" name="impression-radio" id="positive-impression">
-              <label class="impressions__label" for="positive-impression">Скорее положительное</label>
-              <input class="impressions__radio" type="radio" name="impression-radio" id="negative-impression">
-              <label class="impressions__label" for="negative-impression">Скорее отрицательное</label>
-              <input class="impressions__radio" type="radio" name="impression-radio" id="neutral-impression">
-              <label class="impressions__label" for="neutral-impression">Затрудняюсь ответить</label>
-            </fieldset>
+                <div class="person__surname">
+                  <label class="person__label" for="surname">Фамилия*:</label>
+                  <input class="person__field" type="text" placeholder="Иванов" name="surname" id="surname">
+                </div>
 
-            <fieldset class="form-introduce__item attractions">
-              <legend class="form-introduce__legend">Посещенные достопримечательности:</legend>
-              <input class="attractions__checkbox" type="checkbox" name="devil-bridge-checkbox" id="devil-bridge">
-              <label class="attractions__label" for="devil-bridge">Мост Дьявола</label>
-              <input class="attractions__checkbox" type="checkbox" name="bell-mountain-checkbox" id="bell-mountain">
-              <label class="attractions__label" for="bell-mountain">Гора-Колокол</label>
-              <input class="attractions__checkbox" type="checkbox" name="slide-park-checkbox" id="slide-park">
-              <label class="attractions__label" for="slide-park">Слайд-Парк</label>
-              <input class="attractions__checkbox" type="checkbox" name="red-rocks-checkbox" id="red-rocks">
-              <label class="attractions__label" for="red-rocks">Красные скалы</label>
-            </fieldset>
-
-            <fieldset class="form-introduce__item emotions">
-              <legend class="visually-hidden">Место для описания своих впечатлений и эмоций от Седоны</legend>
-              <label class="emotions__label" for="emotions-description">Опишите свои эмоции:</label>
-              <textarea class="emotions__textarea" type="text" name="emotions-description-input"
-                id="emotions-description">
-                      Опишите подробно все свои восторги
-                    </textarea>
-            </fieldset>
-
-            <button class="form-introduce__button button-blue" type="submit">Отправить отзыв</button>
-
+                <div class="person__fathername">
+                  <label class="person__label" for="fathername">Отчество:</label>
+                  <input class="person__field" type="text" placeholder="Александрович" name="fathername"
+                    id="fathername">
+                </div>
+              </div>
+            </div>
           </fieldset>
+
+          <fieldset class="contacts">
+            <h2 class="contacts__title">Контактная информация:</h2>
+
+            <div class="contacts__wrap">
+              <label class="contacts__label contacts__label--tel" for="tel">
+                <span class="contacts__clarification">Контактный </span>телефон*:</label>
+              <input class="contacts__field" type="tel" pattern="\d*" placeholder="Введите телефон" name="tel" id="tel">
+
+              <label class="contacts__label contacts__label--email" for="email">Электронная почта*:</label>
+              <input class="contacts__field" type="email" placeholder="Введите e-mail" name="email" id="email">
+            </div>
+          </fieldset>
+
+          <fieldset class="evaluation">
+            <h2 class="evaluation__title">Ваше общее впечатление:</h2>
+
+            <div class="evaluation__wrap">
+              <div class="evaluation__item">
+                <input class="evaluation__radio visually-hidden" type="radio" name="eval" id="radio-good" checked>
+                <label class="evaluation__label" for="radio-good">Скорее положительное</label>
+              </div>
+
+              <div class="evaluation__item">
+                <input class="evaluation__radio visually-hidden" type="radio" name="eval" id="radio-bad">
+                <label class="evaluation__label" for="radio-bad">Скорее отрицательное</label>
+              </div>
+
+              <div class="evaluation__item">
+                <input class="evaluation__radio visually-hidden" type="radio" name="eval" id="radio-difficult">
+                <label class="evaluation__label" for="radio-difficult">Затрудняюсь ответить</label>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="places">
+            <h2 class="places__title">Посещенные достопримечательности:</h2>
+
+            <div class="places__wrap">
+
+              <div class="places__top">
+                <div class="places__item">
+                  <input class="places__checkbox visually-hidden" type="checkbox" name="places" id="checkbox-1" checked>
+                  <label class="places__label" for="checkbox-1">Мост Дьявола</label>
+                </div>
+
+                <div class="places__item">
+                  <input class="places__checkbox visually-hidden" type="checkbox" name="places" id="checkbox-2" checked>
+                  <label class="places__label" for="checkbox-2">Гора-Колокол</label>
+                </div>
+              </div>
+
+              <div class="places__bot">
+                <div class="places__item">
+                  <input class="places__checkbox visually-hidden" type="checkbox" name="places" id="checkbox-3" checked>
+                  <label class="places__label" for="checkbox-3">Слайд-парк</label>
+                </div>
+
+                <div class="places__item">
+                  <input class="places__checkbox visually-hidden" type="checkbox" name="places" id="checkbox-4">
+                  <label class="places__label" for="checkbox-4">Красные скалы</label>
+                </div>
+              </div>
+
+            </div>
+          </fieldset>
+
+          <fieldset class="emotions">
+            <h2 class="emotions__title">Опишите свои эмоции:</h2>
+
+            <div class="emotions__wrap">
+              <textarea class="emotions__input" name="emotions" id="emotions"
+                placeholder="Опишите подробно все свои восторги"></textarea>
+            </div>
+          </fieldset>
+          <button class="button-send" type="submit">Отправить отзыв</button>
+          <small class="remark">* &#8211; обязательные поля</small>
         </form>
       </section>
     </main>
