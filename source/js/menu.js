@@ -1,6 +1,6 @@
 var navMain = document.querySelector('.main-nav');
 var navOpen = document.querySelector('.page-header__menu-open');
-var navClose = document.querySelector('.page-header__menu-close');
+var navClose = document.querySelector('.main-nav__menu-close');
 
 navMain.classList.remove('main-nav--nojs');
 navMain.classList.remove('main-nav--opened');
