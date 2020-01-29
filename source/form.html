@@ -3,11 +3,11 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <title>Форма отзыва</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML Academy: Седона</title>
   <link rel="preload" href="/fonts/ptsans.woff2" as="font">
   <link rel="preload" href="/fonts/ptsansbold.woff2" as="font">
-  <link href="css/style.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
@@ -26,7 +26,7 @@
 
           <ul class="main-nav__list list-style-reset">
             <li class="main-nav__item"><a href="index.html">Главная</a></li>
-            <li class="main-nav__item"><a href="photo&video.html">Фото и видео</a></li>
+            <li class="main-nav__item"><a href="photo.html">Фото и видео</a></li>
             <li class="main-nav__item main-nav__item--current"><a>Форма отзыва</a></li>
             <li class="main-nav__item"><a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
           </ul>
@@ -47,17 +47,15 @@
 
       </header>
 
-      <main class="page-form">
-        <h1 class="visually-hidden">Оставьте свой отзыв!</h1>
-
-        <section class="recall">
-          <header class="recall__header">
-            <h2 class="recall__slogan">Оставьте свой отзыв</h2>
-            <p class="recall__paragraph">
-              Помогите нашим отелям стать лучше!
-              Оставьте отзыв о них, а также о посещенных вами достопримечательностях
-            </p>
-          </header>
+      <main>
+        <div class="content-wrapper">
+          <section class="intro intro--form">
+            <div class="intro__content intro__content--form">
+              <h1 class="intro__title intro__title--form">Оставьте свой отзыв</h1>
+              <p class="intro__description intro__description--form">Помогите нашим отелям стать лучше! оставьте отзыв о
+                них, а также о посещенных вами достопримечательностях</p>
+            </div>
+          </section>
 
           <form class="review-form" name="review-form" action="https://echo.htmlacademy.ru" method="post">
             <fieldset class="person">
@@ -90,8 +88,7 @@
               <div class="contacts__wrap">
                 <label class="contacts__label contacts__label--tel" for="tel">
                   <span class="contacts__clarification">Контактный </span>телефон*:</label>
-                <input class="contacts__field" type="tel" pattern="\d*" placeholder="Введите телефон" name="tel"
-                  id="tel">
+                <input class="contacts__field" type="tel" pattern="\d*" placeholder="Введите телефон" name="tel" id="tel">
 
                 <label class="contacts__label contacts__label--email" for="email">Электронная почта*:</label>
                 <input class="contacts__field" type="email" placeholder="Введите e-mail" name="email" id="email">
@@ -126,22 +123,19 @@
 
                 <div class="places__top">
                   <div class="places__item">
-                    <input class="places__checkbox visually-hidden" type="checkbox" name="places" id="checkbox-1"
-                      checked>
+                    <input class="places__checkbox visually-hidden" type="checkbox" name="places" id="checkbox-1" checked>
                     <label class="places__label" for="checkbox-1">Мост Дьявола</label>
                   </div>
 
                   <div class="places__item">
-                    <input class="places__checkbox visually-hidden" type="checkbox" name="places" id="checkbox-2"
-                      checked>
+                    <input class="places__checkbox visually-hidden" type="checkbox" name="places" id="checkbox-2" checked>
                     <label class="places__label" for="checkbox-2">Гора-Колокол</label>
                   </div>
                 </div>
 
                 <div class="places__bot">
                   <div class="places__item">
-                    <input class="places__checkbox visually-hidden" type="checkbox" name="places" id="checkbox-3"
-                      checked>
+                    <input class="places__checkbox visually-hidden" type="checkbox" name="places" id="checkbox-3" checked>
                     <label class="places__label" for="checkbox-3">Слайд-парк</label>
                   </div>
 
@@ -158,15 +152,15 @@
               <h2 class="emotions__title">Опишите свои эмоции:</h2>
 
               <div class="emotions__wrap">
-                <textarea class="emotions__input" name="emotions" id="emotions"
-                  placeholder="Опишите подробно все свои восторги"></textarea>
+                <textarea class="emotions__input" name="emotions" id="emotions" placeholder="Опишите подробно все свои восторги"></textarea>
               </div>
             </fieldset>
             <button class="button-send" type="submit">Отправить отзыв</button>
             <small class="remark">* &#8211; обязательные поля</small>
           </form>
-        </section>
+        </div>
       </main>
+
 
       <footer class="page-footer page-footer--index">
 
@@ -237,8 +231,6 @@
 
   <script src="js/menu.js"></script>
   <script src="js/popups.js"></script>
-
-  </div>
 </body>
 
 </html>
