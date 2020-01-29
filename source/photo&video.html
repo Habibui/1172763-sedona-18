@@ -18,40 +18,32 @@
     <div class="shadow-wrapper">
       <header class="page-header">
         <nav class="main-nav main-nav--opened main-nav--nojs">
-          <button class="main-nav__menu-closed" type="button">
-            <svg class="main-nav__button-cross" version="1.1" xmlns="http://www.w3.org/2000/svg" width="22.199"
-              height="22.199">
+          <button class="page-header__menu-close" type="button" aria-label="Закрыть меню">
+            <svg class="page-header__button-cross" version="1.1" xmlns="http://www.w3.org/2000/svg" width="22.199" height="22.199">
               <use xlink:href="#icon-cross"></use>
             </svg>
           </button>
 
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item ">
-              <a href="index.html">Главная</a>
-            </li>
-            <li class="site-list__item site-list__item--current">
-              <a>Фото и видео</a>
-            </li>
-            <li class="site-list__item">
-              <a href="form.html">Форма отзыва</a>
-            </li>
-            <li class="site-list__item">
-              <a href="https://htmlacademy.ru/intensive/adaptive">Html academy</a>
-            </li>
+          <ul class="main-nav__list list-style-reset">
+            <li class="main-nav__item"><a href="index.html">Главная</a></li>
+            <li class="main-nav__item main-nav__item--current"><a>Фото и видео</a></li>
+            <li class="main-nav__item"><a href="form.html">Форма отзыва</a></li>
+            <li class="main-nav__item"><a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
           </ul>
         </nav>
 
         <div class="page-header__top">
-          <a class="page-header__logo" aria-label="Лого Седоны">
-            <!--<img class="page-header__logo-image" src="img/logotyle-mobile.svg" width="102" height="83" alt="Логотип">-->
-          </a>
-          <button class="page-header__menu-open" type="button" aria-label="Открыть меню"></button>
+          <a class="page-header__logo" href="index.html" aria-label="Лого Седоны"></a>
+          <button class="page-header__menu-open" type="button" aria-label="Открыть меню">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22.928" height="21.982" version="1.1">
+              <use xlink:href="#icon-menu"></use>
+            </svg>
+          </button>
         </div>
         <div class="page-header__intro page-header__intro--photo">
           <img class="page-header__title page-header__title--photo" src="img/sedona.svg" width="229" height="39"
             alt="City of Sedona">
         </div>
-
       </header>
 
       <main class="page-posts">
