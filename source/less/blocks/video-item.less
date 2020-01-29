@@ -87,6 +87,7 @@
   padding: 0;
   position: relative;
   top: 22px;
+  background-color: transparent;
 }
 
 .video-item__button--repeat {
@@ -96,6 +97,8 @@
   border: none;
   left: 21px;
 }
+
+
 
 .video-item__button--subtitle {
   width: 33px;
@@ -149,7 +152,6 @@
     width: auto;
   }
 
-
   .video-item__video-player {
     height: 500px;
     width: 648px;
@@ -181,6 +183,18 @@
   .video-item__control-buttons {
     width: 100%;
     height: 0;
+  }
+
+  .video-item__button svg {
+    fill: white;
+  }
+
+  .video-item__button:hover svg {
+    fill: rgba(255, 255, 255, 0.6);
+  }
+
+  .video-item__button:active svg {
+    fill: rgba(255, 255, 255, 0.3);
   }
 
   .video-item__button--repeat {
@@ -247,7 +261,7 @@
   .video-item__controls {
     height: 93px;
     margin-bottom: 0;
-    margin-top: -100px;
+    margin-top: -93px;
   }
 
   .video-item__button--repeat {
